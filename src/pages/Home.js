@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/navbar/NavBar'
 import HeroSection from '../components/herosection/HeroSection'
+import Destination from '../components/destination/DestinantionData'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         url="/"
         btnClass= "show"
       />
+      <Destination/>
     </div>
   )
 }
