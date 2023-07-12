@@ -1,0 +1,133 @@
+:root{
+    --textColor: #222;
+    --hoverColor: #01959a;
+}
+
+
+.NavBarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25) ;
+    border-radius: 1.5rem;
+    width: 95%; 
+    height: 5.5rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    background: #fff;
+}
+
+.navbar-logo{
+    color: var(--textColor);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menuMobile-icon{
+    display: none;
+}
+
+.menuMobile-icon i{
+    font-size:  2rem;
+    color: var(--textColor) ;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 1rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar-link{
+    font-size: 1.2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    white-space: nowrap ;
+    font-weight: 600;
+}
+
+.navbar-link i{
+    padding-right: 0.5rem;
+}
+
+.navbar-link:hover{
+    background: var(--hoverColor);
+    color: #fff;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.signupbtn button{
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* .signupbtn button i{
+    padding-right: 0.5rem;
+} */
+
+.signupbtn button:hover{
+    background: var(--textColor);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+    .NavBarItems{
+        z-index: 99;
+    }
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        opacity: 0;
+        background: #fff;
+        align-items: stretch;
+        padding: 7rem 0 3rem 0;
+        margin: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar-menu.active{
+        border-radius: 1.5rem;
+        left: 0;
+        opacity: 1;
+        z-index: -2;
+    }
+    .signupbtn button{
+        padding: 2rem;
+        margin: auto;
+        width: 80%;
+}
+
+    .navbar-link{
+        margin-inline: auto;
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .menuMobile-icon{
+        display: initial;
+    }
+}
