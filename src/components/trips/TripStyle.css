@@ -46,9 +46,9 @@
 }
 
 @media screen and (max-width: 1000px) {
-    /* .trip{
+    .trip{
         margin: 4rem 2rem;
-    } */
+    }
 
     .tripcard{
         flex-direction: column;

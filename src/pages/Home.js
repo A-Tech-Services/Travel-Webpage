@@ -3,6 +3,7 @@ import NavBar from '../components/navbar/NavBar'
 import HeroSection from '../components/herosection/HeroSection'
 import Destination from '../components/destination/DestinantionData'
 import Trip from '../components/trips/Trip'
+import Footer from '../components/footer/Footer'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       />
       <Destination/>
       <Trip/>
+      <Footer/>
     </div>
   )
 }
