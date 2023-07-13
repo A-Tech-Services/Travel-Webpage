@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/navbar/NavBar'
 import HeroSection from '../components/herosection/HeroSection'
 import Destination from '../components/destination/DestinantionData'
+import Trip from '../components/trips/Trip'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         btnClass= "show"
       />
       <Destination/>
+      <Trip/>
     </div>
   )
 }
