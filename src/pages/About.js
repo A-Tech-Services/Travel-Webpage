@@ -1,6 +1,8 @@
-import React from 'react'
-import NavBar from '../components/navbar/NavBar'
-import HeroSection from '../components/herosection/HeroSection'
+import React from 'react';
+import NavBar from '../components/navbar/NavBar';
+import HeroSection from '../components/herosection/HeroSection';
+import Footer from '../components/footer/Footer';
+import Abouts from '../components/aboutUs/About';
 
 const About = () => {
   return (
@@ -14,6 +16,8 @@ const About = () => {
             url="/"
             btnClass= "aboutshow"
         />
+        <Abouts />
+        <Footer/>
     </div>
   )
 }

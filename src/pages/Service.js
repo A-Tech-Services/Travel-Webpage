@@ -1,6 +1,9 @@
 import React from 'react'
 import NavBar from '../components/navbar/NavBar'
 import HeroSection from '../components/herosection/HeroSection'
+import Footer from '../components/footer/Footer'
+import Trip from '../components/trips/Trip'
+
 
 
 const Service = () => {
@@ -15,6 +18,8 @@ const Service = () => {
             url="/"
             btnClass= "aboutshow"
         />
+        <Trip/>
+        <Footer />
     </div>
   )
 }

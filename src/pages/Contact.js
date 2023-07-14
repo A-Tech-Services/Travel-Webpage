@@ -1,6 +1,9 @@
 import React from 'react'
 import NavBar from '../components/navbar/NavBar'
 import HeroSection from '../components/herosection/HeroSection'
+import Footer from '../components/footer/Footer'
+import Contacts from "../components/contact/Form"
+
 
 const Contact = () => {
   return (
@@ -14,6 +17,8 @@ const Contact = () => {
             url="/"
             btnClass= "aboutshow"
         />
+        <Contacts/>
+        <Footer />
     </div>
   )
 }
